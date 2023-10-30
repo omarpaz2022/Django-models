@@ -100,12 +100,12 @@ DATABASES = {
 
 # DATABASES = {
 #     'default': {
-#         # 'ENGINE': 'django.db.backends.postgresql_psycopg2' --> En desuso.
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2' --> En desuso.
 #         'ENGINE': 'django.db.backends.postgresql',
 #         'NAME': 'marvel_db',        # POSTGRES_DB
 #         'USER' : 'inove_user',      # POSTGRES_USER
 #         'PASSWORD' : '123Marvel!',  # POSTGRES_PASSWORD
-#         'HOST':'db',                # Nombre del servicio
+#         'HOST':'db',                # Nombre del servicio alojado en docker
 #         'PORT': '5432'              # Número del puerto
 #     }
 # }

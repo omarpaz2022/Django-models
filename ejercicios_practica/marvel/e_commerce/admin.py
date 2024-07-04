@@ -37,19 +37,19 @@ class ComicsAdmin(admin.ModelAdmin):
 @admin.register(WishList)
 class WishListsAdmin(admin.ModelAdmin):
     #NOTE: Para seleccionar los campos en la tabla de registros
-    list_display2 = ('id', 'user', 'comic', 'favorite')
+    list_display = ('id', 'user', 'comic', 'favorite')
 
     #NOTE: Filtro lateral de elementos:
-    list_filter2= ('id','user','comic')
+    list_filter = ('id','user','comic')
     
     #NOTE: Buscador de elementos en la columna:
-    search_fields2 = ['comic']
+    search_fields = ['comic']
 
     #NOTE: Para seleccionar los campos en el registro. 
     #fields = ('id', 'comic', 'wished_qty')
 
     #NOTE: Genera un campo desplegable con los registros seleccionados.
-    fieldsets2 = (
+    fieldsets = (
         (None, {
             'fields': ('id', 'user', 'comic','favorite')
         }),
